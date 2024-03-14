@@ -1,0 +1,12 @@
+const express = require('express');
+const router = express.Router();
+
+
+
+const {cartdata} = require("../controller/cartdata")
+const {cartdatastor} = require("../controller/cartdatastor")
+
+router.get("/cart" , cartdata);
+router.post("/cartdata" , cartdatastor);
+
+module.exports = router;
